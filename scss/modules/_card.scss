@@ -1,0 +1,45 @@
+.card {
+    flex: 0 0 auto;
+    min-height: 280px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: $white;
+    text-shadow: 2px 2px 2px #663a22;
+
+    @media (min-width: 900px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &-notation {
+        font-size: 18px;
+        line-height: 18px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &-header {
+        position: relative;
+        font-size: 48px;
+        line-height: 1.2;
+        
+        &::after {
+            position: absolute;
+            content: "";
+            width: 95px;
+            height: 4px;
+            background: $light-blue;
+            right: 0;
+            bottom: 20px;
+
+        }
+    }
+
+    &-content {
+        font-size: 18px;  
+    }
+}

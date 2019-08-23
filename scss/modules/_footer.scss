@@ -1,0 +1,102 @@
+.footer {
+    border-top: 3px solid $light-gray;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-nav {
+        position: relative;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 auto;
+        padding: 0;
+        list-style-type: none;
+        padding-bottom: 50px;
+
+        &__item {
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: none;
+                color: $link-gray;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            min-width: 450px;
+        }
+    }
+
+    &-divider {
+        text-align: center;
+        padding-bottom: 50px;
+
+        span::after, span::before {
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: $link-gray;
+            bottom: 0;
+        }
+
+        span::after {
+            left: 40px;
+        }
+
+        span::before {
+            right: 40px;
+        }
+
+        span {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            background: $link-gray;
+            opacity: .5;
+            display: inline-block;
+            margin: 0 auto;
+        }
+    }
+
+    &-content {
+        text-align: center;
+        padding-bottom: 50px;
+
+        &__item {
+            margin-bottom: 25px;
+            color: $ex-light-gray;
+            font-size: 14px;
+            line-height: 14px;
+
+            &--alt {
+                color: $beige;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-info {
+        text-align: center;
+        font-size: 12px;
+        line-height: 12px;
+        color: $ex-light-gray;
+        width: 100%;
+        border-top: 1px solid $ex-light-gray-border;
+        padding-top: 35px;
+        padding-bottom: 55px;
+    }
+}

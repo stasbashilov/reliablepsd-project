@@ -1,0 +1,41 @@
+.btn {
+    width: 100%;
+    padding: 20px 20px 20px;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    &:active {
+        opacity: .8;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 285px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    &-beige {
+        background-color: $beige;
+        border-bottom: 10px solid $brown;
+
+        &:hover {
+            border-bottom-color: $light-blue;
+            color: $gray;
+        }
+    }
+
+    &-blue {
+        background: $light-blue;
+        border-bottom: 10px solid $navy;
+
+        &:hover {
+            border-bottom-color: $brown;
+            color: $gray;
+        }
+    }
+}

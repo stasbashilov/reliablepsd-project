@@ -1,0 +1,66 @@
+.slider-block {
+    padding-top: 33vh;
+    background-color: $blue;
+    background-image: url('/images/Group3copy.png');
+    background-size: cover;
+    margin-bottom: 60px;
+    position: relative;
+
+    @media (min-width: 375px) {
+        padding-top: 285px;
+    }
+
+    @media (min-width: 425px) {
+        padding-top: 305px;
+    }
+
+    @media (min-width: 500px) {
+        padding-top: 390px;
+    }
+    
+    @media (min-width: 768px) {
+        padding-top: 600px;
+        margin-bottom: 110px;
+    }
+} 
+
+.slider-wrapper {
+    width: 80%;
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    
+    @media (min-width: 768px) {
+        width: 756px;
+        top: 145px;
+    }
+}
+
+.slider-layer {
+    position: absolute;
+    top: 1.5%;
+    bottom: 1.5%;
+    left: 1%;
+    right: 1%;
+    display: flex;
+    justify-content: flex-start;
+    
+    &__item {
+        flex: 1 0 33%;
+        opacity: .4;
+
+        &--one {
+            background: $layer-blue-one;
+        }
+
+        &--two {
+            background: $layer-blue-two;
+        }
+
+        &--three {
+            background: $layer-blue-three;
+        }
+    }
+}

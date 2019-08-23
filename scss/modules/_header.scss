@@ -1,0 +1,27 @@
+.header {
+    overflow: hidden;
+    padding-bottom: 130px;
+    background: url('/images/jared-sluyter-342881.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color:#464646;
+
+    @media (min-width: 1024px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .card {
+        max-width: 480px;
+
+        &-header {
+            padding-bottom: 50px;
+        }
+        
+        &-content {
+            margin-bottom: 80px;
+        }
+    }
+}
+

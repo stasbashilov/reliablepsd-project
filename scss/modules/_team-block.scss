@@ -1,0 +1,47 @@
+.team-block {
+    background: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 440px;
+    margin-bottom: 60px;
+
+    @media (min-width: 900px) {
+        flex-direction: row;
+    }
+
+    &__image {
+        height: auto;
+        flex: 0 0 300px;
+        background-image: url('/images/Picture.png');
+        background-size: cover;
+
+        @media (min-width: 900px) {
+            flex: 0 0 50%;
+            margin-right: 30px;
+        }
+    }
+
+    &__content {
+        min-height: 440px;
+        flex: 0 0 45%;
+    }
+
+    .card {
+        text-shadow: none;
+        
+
+        &-content {
+            margin-bottom: 40px;
+            
+        }
+
+        &-header {
+            padding-bottom: 40px;
+        }
+
+        .btn {
+            margin-bottom: 40px;
+        }
+    }
+}

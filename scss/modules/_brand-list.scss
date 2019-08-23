@@ -1,0 +1,26 @@
+.brand-block {
+    background: $off-white;
+    border-top: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.brand-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+
+    &__item {
+        display: block;
+        min-width: 150px;
+        min-height: 50px;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
