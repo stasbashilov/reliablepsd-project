@@ -9,7 +9,7 @@
   "author": "Stas Bashilov",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.21.0",
+    "browser-sync": "^2.27.10",
     "gulp": "4.0",
     "gulp-cli": "^2.0.0",
     "gulp-concat": "^2.6.1",
